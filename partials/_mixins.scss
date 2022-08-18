@@ -1,0 +1,28 @@
+@use "./devices";
+
+@mixin maindiv {
+    display: flex;
+    align-items: center;
+    &--para {
+        width: 90vw;
+    }
+}
+
+@mixin toppage {
+    &--links {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        font-size: 40px;
+    }
+}
+
+@mixin fontsize {
+    @include devices.phone-s {
+        font-size: 12px;
+    }
+    @include devices.phone {
+        font-size: 14px;
+    }
+}

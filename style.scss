@@ -1,0 +1,318 @@
+@use "./partials/palette";
+@use "./partials/devices";
+@use "./partials/mixins";
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.navlink {
+    &:link,
+    &:visited {
+        text-decoration: none;
+        background-color: palette.$secondary-colour;
+        color: palette.$title-colour;
+    }
+    &:hover {
+        background-color: palette.$title-colour;
+        color: palette.$secondary-colour;
+        text-decoration: underline;
+        text-underline-offset: 0.4em;
+    }
+    &:active {
+        background-color: palette.$navbar-active-colour;
+        color: palette.$secondary-colour;
+    }
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.header {
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: palette.$primary-colour;
+    &__header {
+        @include mixins.toppage;
+        &--links {
+            padding-bottom: 20px;
+            margin-top: 0px;
+        }
+    }
+    &__navig {
+        display: flex;
+        justify-content: center;
+        background-color: palette.$secondary-colour;
+        flex-wrap: wrap;
+    }
+    &__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+        min-width: 200px;
+        height: 3vh;
+        min-height: 30px;
+        padding: 10px;
+    }
+    &__titleBox {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        @include devices.small-width {
+            justify-content: left;
+        }
+        &--title {
+            width: 40%;
+            color: palette.$title-colour;
+            font-size: 100px;
+            margin-left: 5%;
+            text-align: center;
+            font-family: "Titan One", cursive;
+            @include devices.phone-s {
+                font-size: 60px;
+                width: 20%;
+            }
+            @include devices.phone {
+                font-size: 70px;
+                width: 20%;
+            }
+            @include devices.tablet {
+                font-size: 80px;
+                width: 20%;
+            }
+            @include devices.large-width {
+                text-align: right;
+            }
+        }
+        &--image {
+            display: flex;
+            @include devices.small-width {
+                height: 0px;
+                width: 0px;
+            }
+            @include devices.tablet-ls {
+                height: 30vh;
+                width: 30vh;
+            }
+            @include devices.laptop {
+                height: 50vh;
+                width: 50vh;
+            }
+            @include devices.desktop {
+                height: 60vh;
+                width: 60vh;
+            }
+            &--img {
+                width: 40vh;
+                height: 40vh;
+                @include devices.small-width {
+                    height: 0px;
+                }
+                @include devices.laptop {
+                    height: 50vh;
+                    width: 50vh;
+                }
+                @include devices.desktop {
+                    height: 60vh;
+                    width: 60vh;
+                }
+            }
+        }
+    }
+}
+.main {
+    @extend .header;
+    &__subtitle {
+        color: palette.$subtitle-colour;
+        margin-top: 50px;
+    }
+    &__titlescreen {
+        background-color: palette.$secondary-colour;
+        @include mixins.maindiv;
+        @include mixins.toppage;
+        &--box {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            &--para {
+                width: 80%;
+                @include devices.large-width {
+                    font-size: 20px;
+                }
+                @include devices.tablet {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    &__portfolio {
+        background-color: palette.$primary-colour;
+        @include mixins.toppage;
+        &--flex {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+            @include devices.phone {
+                flex-direction: column;
+                align-items: center;
+                font-size: 12px;
+            }
+            @include devices.phone-s {
+                flex-direction: column;
+                align-items: center;
+                font-size: 12px;
+            }
+        }
+        &--img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            @include devices.tablet {
+                width: 70px;
+                height: 70px;
+            }
+            @include devices.phone {
+                width: 50px;
+                height: 50px;
+            }
+            @include devices.phone-s {
+                width: 40px;
+                height: 40px;
+            }
+            &:hover {
+                border: 3px solid palette.$neutral-colour-dark;
+                border-radius: 10px;
+            }
+        }
+        &--para {
+            width: 45%;
+            height: 30vh;
+            margin-top: 40px;
+            @include devices.tablet {
+                font-size: 15px;
+            }
+            @include devices.phone {
+                height: 19vh;
+                width: 90%;
+                margin-top: 4px;
+            }
+            @include devices.phone-s {
+                height: 17vh;
+                width: 90%;
+                margin-top: 4px;
+            }
+            &--header {
+                font-weight: bold;
+            }
+            &--link {
+                cursor: pointer;
+                text-decoration: none;
+                background-color: none;
+                &:hover {
+                    text-decoration: none;
+                    background-color: none;
+                }
+            }
+        }
+    }
+    &__experience {
+        background-color: palette.$secondary-colour;
+        @include mixins.maindiv;
+        @include mixins.toppage;
+        &--para {
+            width: 90%;
+            @include mixins.fontsize;
+        }
+    }
+    &__contact {
+        background-color: palette.$primary-colour;
+        @include mixins.maindiv;
+        @include mixins.toppage;
+        &--img--image {
+            width: 300px;
+            @include devices.large-width {
+                width: 500px;
+            }
+        }
+    }
+    .personals {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        font-family: "Pacifico";
+        margin-top: 10px;
+        @include devices.large-width {
+            margin-top: 20px;
+        }
+        &__logo {
+            width: 32px;
+            height: 32px;
+            @include devices.ml-width {
+                width: 64px;
+                height: 64px;
+            }
+        }
+        &__github {
+            background-image: url("./images/github-linkedin/github-black-32.png");
+            margin-right: 10px;
+            &:hover {
+                background-image: (
+                    url("./images/github-linkedin/github-yellow-32.png")
+                );
+            }
+            &:active {
+                background-image: (
+                    url("./images/github-linkedin/github-orange-32.png")
+                );
+            }
+            @include devices.ml-width {
+                background-image: url("./images/github-linkedin/github-black-64.png");
+                &:hover {
+                    background-image: (
+                        url("./images/github-linkedin/github-yellow-64.png")
+                    );
+                }
+                &:active {
+                    background-image: (
+                        url("./images/github-linkedin/github-orange-64.png")
+                    );
+                }
+            }
+        }
+        &__linkedin {
+            margin-left: 10px;
+            background-image: url("./images/github-linkedin/linkedin-black-32.png");
+            &:hover {
+                background-image: (
+                    url("./images/github-linkedin/linkedin-yellow-32.png")
+                );
+            }
+            &:active {
+                background-image: (
+                    url("./images/github-linkedin/linkedin-orange-32.png")
+                );
+            }
+            @include devices.ml-width {
+                background-image: url("./images/github-linkedin/linkedin-black-64.png");
+                &:hover {
+                    background-image: (
+                        url("./images/github-linkedin/linkedin-yellow-64.png")
+                    );
+                }
+                &:active {
+                    background-image: (
+                        url("./images/github-linkedin/linkedin-orange-64.png")
+                    );
+                }
+            }
+        }
+    }
+}

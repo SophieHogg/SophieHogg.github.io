@@ -1,0 +1,399 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navlink:link, .navlink:visited {
+  text-decoration: none;
+  background-color: #b2bcaa;
+  color: #4c654c;
+}
+.navlink:hover {
+  background-color: #4c654c;
+  color: #b2bcaa;
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+}
+.navlink:active {
+  background-color: #3d553d;
+  color: #b2bcaa;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header, .main {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #c9cebd;
+}
+.header__header--links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-size: 40px;
+}
+.header__header--links {
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+.header__navig {
+  display: flex;
+  justify-content: center;
+  background-color: #b2bcaa;
+  flex-wrap: wrap;
+}
+.header__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  min-width: 200px;
+  height: 3vh;
+  min-height: 30px;
+  padding: 10px;
+}
+.header__titleBox {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+@media only screen and (max-width: 768px) {
+  .header__titleBox {
+    justify-content: left;
+  }
+}
+.header__titleBox--title {
+  width: 40%;
+  color: #4c654c;
+  font-size: 100px;
+  margin-left: 5%;
+  text-align: center;
+  font-family: "Titan One", cursive;
+}
+@media only screen and (max-width: 300px) {
+  .header__titleBox--title {
+    font-size: 60px;
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .header__titleBox--title {
+    font-size: 70px;
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+  .header__titleBox--title {
+    font-size: 80px;
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header__titleBox--title {
+    text-align: right;
+  }
+}
+.header__titleBox--image {
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .header__titleBox--image {
+    height: 0px;
+    width: 0px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .header__titleBox--image {
+    height: 30vh;
+    width: 30vh;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+  .header__titleBox--image {
+    height: 50vh;
+    width: 50vh;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .header__titleBox--image {
+    height: 60vh;
+    width: 60vh;
+  }
+}
+.header__titleBox--image--img {
+  width: 40vh;
+  height: 40vh;
+}
+@media only screen and (max-width: 768px) {
+  .header__titleBox--image--img {
+    height: 0px;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+  .header__titleBox--image--img {
+    height: 50vh;
+    width: 50vh;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .header__titleBox--image--img {
+    height: 60vh;
+    width: 60vh;
+  }
+}
+
+.main__subtitle {
+  color: #846c5b;
+  margin-top: 50px;
+}
+.main__titlescreen {
+  background-color: #b2bcaa;
+  display: flex;
+  align-items: center;
+}
+.main__titlescreen--para {
+  width: 90vw;
+}
+.main__titlescreen--links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-size: 40px;
+}
+.main__titlescreen--box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main__titlescreen--box--para {
+  width: 80%;
+}
+@media only screen and (min-width: 768px) {
+  .main__titlescreen--box--para {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+  .main__titlescreen--box--para {
+    font-size: 16px;
+  }
+}
+.main__portfolio {
+  background-color: #c9cebd;
+}
+.main__portfolio--links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-size: 40px;
+}
+.main__portfolio--flex {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .main__portfolio--flex {
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .main__portfolio--flex {
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+  }
+}
+.main__portfolio--img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+  .main__portfolio--img {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .main__portfolio--img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .main__portfolio--img {
+    width: 40px;
+    height: 40px;
+  }
+}
+.main__portfolio--img:hover {
+  border: 3px solid #473d3e;
+  border-radius: 10px;
+}
+.main__portfolio--para {
+  width: 45%;
+  height: 30vh;
+  margin-top: 40px;
+}
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+  .main__portfolio--para {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .main__portfolio--para {
+    height: 19vh;
+    width: 90%;
+    margin-top: 4px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .main__portfolio--para {
+    height: 17vh;
+    width: 90%;
+    margin-top: 4px;
+  }
+}
+.main__portfolio--para--header {
+  font-weight: bold;
+}
+.main__portfolio--para--link {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: none;
+}
+.main__portfolio--para--link:hover {
+  text-decoration: none;
+  background-color: none;
+}
+.main__experience {
+  background-color: #b2bcaa;
+  display: flex;
+  align-items: center;
+}
+.main__experience--para {
+  width: 90vw;
+}
+.main__experience--links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-size: 40px;
+}
+.main__experience--para {
+  width: 90%;
+}
+@media only screen and (max-width: 300px) {
+  .main__experience--para {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .main__experience--para {
+    font-size: 14px;
+  }
+}
+.main__contact {
+  background-color: #c9cebd;
+  display: flex;
+  align-items: center;
+}
+.main__contact--para {
+  width: 90vw;
+}
+.main__contact--links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-size: 40px;
+}
+.main__contact--img--image {
+  width: 300px;
+}
+@media only screen and (min-width: 768px) {
+  .main__contact--img--image {
+    width: 500px;
+  }
+}
+.main .personals {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-family: "Pacifico";
+  margin-top: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .main .personals {
+    margin-top: 20px;
+  }
+}
+.main .personals__logo {
+  width: 32px;
+  height: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .main .personals__logo {
+    width: 64px;
+    height: 64px;
+  }
+}
+.main .personals__github {
+  background-image: url("./images/github-linkedin/github-black-32.png");
+  margin-right: 10px;
+}
+.main .personals__github:hover {
+  background-image: url("./images/github-linkedin/github-yellow-32.png");
+}
+.main .personals__github:active {
+  background-image: url("./images/github-linkedin/github-orange-32.png");
+}
+@media only screen and (min-width: 768px) {
+  .main .personals__github {
+    background-image: url("./images/github-linkedin/github-black-64.png");
+  }
+  .main .personals__github:hover {
+    background-image: url("./images/github-linkedin/github-yellow-64.png");
+  }
+  .main .personals__github:active {
+    background-image: url("./images/github-linkedin/github-orange-64.png");
+  }
+}
+.main .personals__linkedin {
+  margin-left: 10px;
+  background-image: url("./images/github-linkedin/linkedin-black-32.png");
+}
+.main .personals__linkedin:hover {
+  background-image: url("./images/github-linkedin/linkedin-yellow-32.png");
+}
+.main .personals__linkedin:active {
+  background-image: url("./images/github-linkedin/linkedin-orange-32.png");
+}
+@media only screen and (min-width: 768px) {
+  .main .personals__linkedin {
+    background-image: url("./images/github-linkedin/linkedin-black-64.png");
+  }
+  .main .personals__linkedin:hover {
+    background-image: url("./images/github-linkedin/linkedin-yellow-64.png");
+  }
+  .main .personals__linkedin:active {
+    background-image: url("./images/github-linkedin/linkedin-orange-64.png");
+  }
+}
