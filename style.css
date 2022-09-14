@@ -1,22 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+:root {
+  --primary-colour: #c9cebd;
+  --secondary-colour: #b2bcaa;
+  --title-colour: #4c654c;
+  --subtitle-colour: #846c5b;
+  --neutral-colour: #6c6061;
+  --navbar-hover-colour-text: #c9cebd;
+  --neutral-colour-dark: #473d3e;
+  --navbar-active-colour: #3d553d;
+  --text: #000;
+}
+
+[data-theme=dark] {
+  --primary-colour: #2f3b13;
+  --secondary-colour: #384617;
+  --title-colour: #8ab137;
+  --subtitle-colour: #dac864;
+  --neutral-colour: #ebc2c5;
+  --navbar-hover-colour-text: #2c4119;
+  --neutral-colour-dark: #92686d;
+  --navbar-active-colour: #031b03;
+  --text: #ebc2c5;
+}
+
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto Mono", monospace;
   scroll-behavior: smooth;
+  color: var(--text);
 }
 
 .navlink:link, .navlink:visited {
   text-decoration: none;
-  background-color: #b2bcaa;
-  color: #4c654c;
+  background-color: var(--secondary-colour);
 }
 .navlink:hover {
-  background-color: #4c654c;
-  color: #b2bcaa;
-  text-decoration: underline;
-  text-underline-offset: 0.4em;
+  background-color: var(--title-colour);
 }
 .navlink:active {
-  background-color: #3d553d;
-  color: #b2bcaa;
+  background-color: var(--navbar-active-colour);
 }
 
 body {
@@ -30,7 +51,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #c9cebd;
+  background-color: var(--primary-colour);
 }
 .header__header--links {
   width: 100%;
@@ -46,7 +67,7 @@ body {
 .header__navig {
   display: flex;
   justify-content: center;
-  background-color: #b2bcaa;
+  background-color: var(--secondary-colour);
   flex-wrap: wrap;
 }
 .header__card {
@@ -58,6 +79,22 @@ body {
   height: 3vh;
   min-height: 30px;
   padding: 10px;
+  color: var(--title-colour);
+}
+@media only screen and (max-width: 768px) {
+  .header__card {
+    font-size: 15px;
+    min-height: 20px;
+    min-width: 150px;
+  }
+}
+.header__card:hover {
+  color: var(--navbar-hover-colour-text);
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+}
+.header__card:active {
+  color: var(--navbar-hover-colour-text);
 }
 .header__titleBox {
   display: flex;
@@ -67,14 +104,9 @@ body {
   justify-content: space-evenly;
   flex-direction: row;
 }
-@media only screen and (max-width: 768px) {
-  .header__titleBox {
-    justify-content: left;
-  }
-}
 .header__titleBox--title {
   width: 40%;
-  color: #4c654c;
+  color: var(--title-colour);
   font-size: 100px;
   margin-left: 5%;
   text-align: center;
@@ -153,11 +185,11 @@ body {
 }
 
 .main__subtitle {
-  color: #846c5b;
+  color: var(--subtitle-colour);
   margin-top: 50px;
 }
 .main__titlescreen {
-  background-color: #b2bcaa;
+  background-color: var(--secondary-colour);
   display: flex;
   align-items: center;
 }
@@ -190,7 +222,7 @@ body {
   }
 }
 .main__portfolio {
-  background-color: #c9cebd;
+  background-color: var(--primary-colour);
 }
 .main__portfolio--links {
   width: 100%;
@@ -243,7 +275,7 @@ body {
   }
 }
 .main__portfolio--img:hover {
-  border: 3px solid #473d3e;
+  border: 3px solid var(--neutral-colour-dark);
   border-radius: 10px;
 }
 .main__portfolio--para {
@@ -283,7 +315,7 @@ body {
   background-color: none;
 }
 .main__experience {
-  background-color: #b2bcaa;
+  background-color: var(--secondary-colour);
   display: flex;
   align-items: center;
 }
@@ -311,7 +343,7 @@ body {
   }
 }
 .main__contact {
-  background-color: #c9cebd;
+  background-color: var(--primary-colour);
   display: flex;
   align-items: center;
 }
@@ -349,7 +381,7 @@ body {
   width: 32px;
   height: 32px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 400px) {
   .main .personals__logo {
     width: 64px;
     height: 64px;
@@ -365,7 +397,7 @@ body {
 .main .personals__github:active {
   background-image: url("./images/github-linkedin/github-orange-32.png");
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 400px) {
   .main .personals__github {
     background-image: url("./images/github-linkedin/github-black-64.png");
   }
@@ -386,7 +418,7 @@ body {
 .main .personals__linkedin:active {
   background-image: url("./images/github-linkedin/linkedin-orange-32.png");
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 400px) {
   .main .personals__linkedin {
     background-image: url("./images/github-linkedin/linkedin-black-64.png");
   }

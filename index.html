@@ -13,6 +13,10 @@
             href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap"
             rel="stylesheet"
         />
+        <script
+            src="https://kit.fontawesome.com/8c750a3bcb.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
 
     <body>
@@ -29,6 +33,15 @@
                 >
                 <a href="#contact" class="navlink"
                     ><div class="header__card">Contact</div></a
+                >
+                <a
+                    onclick="return toDarkMode()"
+                    href="#"
+                    class="navlink"
+                    id="dark-mode-button"
+                    ><div class="header__card" id="darkModeText">
+                        Dark Mode
+                    </div></a
                 >
             </nav>
             <div class="header__titleBox">
@@ -54,9 +67,7 @@
                 <div class="main__titlescreen--box">
                     <div class="main__titlescreen--box--para">
                         <p>
-                            I'm a junior software developer, specialising in
-                            front-end web development with JavaScript, HTML and
-                            CSS.
+                            I'm a junior software developer, with experience developing in both the front end and the back end. Among the technologies I have used are HTML, CSS, JavaScript (including the React and Node libraries), Java and SQL. I am also looking into Angular and Python as I seek to develop my skills further.
                         </p>
                         <p>
                             I'm curious, with a willingness to learn, and
@@ -69,12 +80,9 @@
                             Indonesian and Mongolian at university, and
                             regularly read Indonesian books! During a semester's
                             break, I also spent 3 months in Spain learning
-                            Spanish - but I'm still brushing up on that!
-                        </p>
-                        <p>
-                            I love playing video games and board games too,
-                            especially with friends. Once, I played the Game of
-                            Thrones board game until 3am - but I won!
+                            Spanish - but I'm still brushing up on that! I've
+                            also attempted on various occasions to learn Latin,
+                            Swedish and French.
                         </p>
                         <p>
                             I also travel regularly, having been to more than 30
@@ -107,8 +115,13 @@
                         </a>
                         <p class="main__portfolio--para--header">Calculator</p>
                         <p>
-                            A simple calculator constructed using HTML, CSS and
-                            JavaScript.
+                            A simple calculator with basic addition, subtraction, multiplication and division functionality.
+                            <br><br>
+                            <i class="fa-brands fa-html5 fa-xl"></i>
+                            <span> </span>
+                            <i class="fa-brands fa-css3-alt fa-xl"></i>
+                            <span> </span>
+                            <i class="fa-brands fa-square-js fa-xl"></i>
                         </p>
                     </div>
                     <div class="main__portfolio--para">
@@ -127,8 +140,14 @@
                             Wattle Translator - Morse Code Project
                         </p>
                         <p>
-                            A morse code translator, using HTML, CSS and
-                            JavaScript.
+                            A morse code project that translates from Latin to Morse and vice versa.
+                            <br><br>
+                            <i class="fa-brands fa-html5 fa-xl"></i>
+                            <span> </span>
+                            <i class="fa-brands fa-css3-alt fa-xl"></i
+                            ></i>
+                            <span> </span>
+                            <i class="fa-brands fa-square-js fa-xl"></i>
                         </p>
                     </div>
                 </div>
@@ -149,8 +168,11 @@
                             Find Me Books! Google Books API
                         </p>
                         <p>
-                            A React app that uses an API to call books based on
-                            a search term inputted by the user.
+                            An app that uses an API to call books based on a
+                            search term inputted by the user.
+                            <br /><br /><i class="fa-brands fa-react fa-xl"></i>
+                            <span> </span>
+                            <i class="fa-brands fa-css3-alt fa-xl"></i>
                         </p>
                     </div>
                     <div class="main__portfolio--para">
@@ -169,8 +191,12 @@
                             Clothes E-Commerce Website
                         </p>
                         <p>
-                            A React app that uses a document database in
-                            Firestore to create an e-shop for a clothing brand.
+                            An app that uses Firestore to create an e-shop for a
+                            clothing brand.
+                            <br /><br />
+                            <i class="fa-brands fa-react fa-xl"></i>
+                            <span> </span>
+                            <i class="fa-brands fa-css3-alt fa-xl"></i>
                         </p>
                     </div>
                 </div>
@@ -190,24 +216,43 @@
                             Studied front-end web development, including HTML,
                             CSS and JavaScript
                         </li>
+                        <br />
+                        <li>
+                            Studied back-end development including Java and
+                            Nest.js, and databases such as Firestore and MySQL.
+                        </li>
+                        <br />
                         <li>
                             Completed challenges and exercises to gain
                             experience using development and design concepts
                         </li>
                     </ul>
-                    <h4>Software Developer - Integrum Management Systems</h4>
+                    <br />
+                    <h4>
+                        2020-2022: Software Tester/Developer - Integrum
+                        Management Systems
+                    </h4>
                     <ul>
                         <li>
-                            Tested extensively in both the back-end and the
-                            front-end, using MasterDev and test instances.
+                            In a functional testing QA role, tested extensively
+                            in both the back-end and the front-end, using
+                            MasterDev and test instances.
                         </li>
+                        <br />
                         <li>
                             Designed homepages for clients using HTML and CSS
                         </li>
+                        <br />
                         <li>
                             Regularly met with clients to manage expectations,
                             provide updates, request clarification, deliver
                             finalised products and acquire feedback.
+                        </li>
+                        <br />
+                        <li>
+                            Cooperated closely with other teams, including
+                            development and support teams, to deliver to
+                            clients.
                         </li>
                     </ul>
                 </div>
@@ -248,5 +293,6 @@
                 </div>
             </div>
         </main>
+        <script src="script.js"></script>
     </body>
 </html>

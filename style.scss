@@ -1,26 +1,49 @@
 @use "./partials/palette";
 @use "./partials/devices";
 @use "./partials/mixins";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+:root {
+    --primary-colour: #c9cebd;
+    --secondary-colour: #b2bcaa;
+    --title-colour: #4c654c;
+    --subtitle-colour: #846c5b;
+    --neutral-colour: #6c6061;
+    --navbar-hover-colour-text: #c9cebd;
+    --neutral-colour-dark: #473d3e;
+    --navbar-active-colour: #3d553d;
+    --text: #000;
+}
+
+[data-theme="dark"] {
+    --primary-colour: #2f3b13;
+    --secondary-colour: #384617;
+    --title-colour: #8ab137;
+    --subtitle-colour: #dac864;
+    --neutral-colour: #ebc2c5;
+    --navbar-hover-colour-text: #2c4119;
+    --neutral-colour-dark: #92686d;
+    --navbar-active-colour: #031b03;
+    --text: #ebc2c5;
+}
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto Mono", monospace;
     scroll-behavior: smooth;
+    color: var(--text);
 }
 .navlink {
     &:link,
     &:visited {
         text-decoration: none;
-        background-color: palette.$secondary-colour;
-        color: palette.$title-colour;
+        background-color: var(--secondary-colour);
     }
     &:hover {
-        background-color: palette.$title-colour;
-        color: palette.$secondary-colour;
-        text-decoration: underline;
-        text-underline-offset: 0.4em;
+        background-color: var(--title-colour);
     }
     &:active {
-        background-color: palette.$navbar-active-colour;
-        color: palette.$secondary-colour;
+        background-color: var(--navbar-active-colour);
     }
 }
 body {
@@ -33,7 +56,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: palette.$primary-colour;
+    background-color: var(--primary-colour);
     &__header {
         @include mixins.toppage;
         &--links {
@@ -44,7 +67,7 @@ body {
     &__navig {
         display: flex;
         justify-content: center;
-        background-color: palette.$secondary-colour;
+        background-color: var(--secondary-colour);
         flex-wrap: wrap;
     }
     &__card {
@@ -56,6 +79,20 @@ body {
         height: 3vh;
         min-height: 30px;
         padding: 10px;
+        color: var(--title-colour);
+        @include devices.small-width {
+            font-size: 15px;
+            min-height: 20px;
+            min-width: 150px;
+        }
+        &:hover {
+            color: var(--navbar-hover-colour-text);
+            text-decoration: underline;
+            text-underline-offset: 0.4em;
+        }
+        &:active {
+            color: var(--navbar-hover-colour-text);
+        }
     }
     &__titleBox {
         display: flex;
@@ -64,12 +101,9 @@ body {
         align-items: center;
         justify-content: space-evenly;
         flex-direction: row;
-        @include devices.small-width {
-            justify-content: left;
-        }
         &--title {
             width: 40%;
-            color: palette.$title-colour;
+            color: var(--title-colour);
             font-size: 100px;
             margin-left: 5%;
             text-align: center;
@@ -129,11 +163,11 @@ body {
 .main {
     @extend .header;
     &__subtitle {
-        color: palette.$subtitle-colour;
+        color: var(--subtitle-colour);
         margin-top: 50px;
     }
     &__titlescreen {
-        background-color: palette.$secondary-colour;
+        background-color: var(--secondary-colour);
         @include mixins.maindiv;
         @include mixins.toppage;
         &--box {
@@ -153,7 +187,7 @@ body {
         }
     }
     &__portfolio {
-        background-color: palette.$primary-colour;
+        background-color: var(--primary-colour);
         @include mixins.toppage;
         &--flex {
             display: flex;
@@ -188,7 +222,7 @@ body {
                 height: 40px;
             }
             &:hover {
-                border: 3px solid palette.$neutral-colour-dark;
+                border: 3px solid var(--neutral-colour-dark);
                 border-radius: 10px;
             }
         }
@@ -224,7 +258,7 @@ body {
         }
     }
     &__experience {
-        background-color: palette.$secondary-colour;
+        background-color: var(--secondary-colour);
         @include mixins.maindiv;
         @include mixins.toppage;
         &--para {
@@ -233,7 +267,7 @@ body {
         }
     }
     &__contact {
-        background-color: palette.$primary-colour;
+        background-color: var(--primary-colour);
         @include mixins.maindiv;
         @include mixins.toppage;
         &--img--image {

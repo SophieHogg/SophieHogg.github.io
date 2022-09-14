@@ -4,6 +4,8 @@
 
 ![My portfolio](./images/portfolio.PNG)
 
+This project was completed using HTML, CSS and JavaScript as part of my time at \_nology.
+
 ## Colour Palette
 
 I enjoy taking my colour palettes from Australian flora. This is a unifying factor throughout all of my personal projects. In this case, I used the palette based the foliage and bark of Australian gum trees, with a lot of faded greens and pale grey-brown colours.
@@ -18,11 +20,22 @@ I have tested the website using placeholder devices provided by Google Chrome an
 ## What I would like to add with more time
 
 -   A dark mode implemented with JavaScript. This could turn the page into more of a rainforesty/dark and dappled look.
-
 -   More decoration for the empty spaces on the page, e.g. more images, more little flourishes, etc.
-
 -   Adding icons for languages used in the projects section, as opposed to writing them out.
-
 -   Potentially some minor animations
-
 -   Links to Github and LinkedIn at the bottom of the page
+
+## Updates 14/09:
+
+-   implemented dark mode, using lots of bright and dark greens with some yellows, browns and pale pinks for some contrast
+-   added links for Github and LinkedIn using colour-changing icons.
+-   added icons for the tech stacks used in portfolio projects.
+-   changed font from Arial and added some new fonts from Google Fonts
+
+## Still To Add
+
+-   Minor animations
+
+### Dark Mode:
+
+![My portfolio (dark mode)](./images/portfolio-dark.PNG)
