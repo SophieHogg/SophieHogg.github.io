@@ -31,11 +31,12 @@ I have tested the website using placeholder devices provided by Google Chrome an
 -   added links for Github and LinkedIn using colour-changing icons.
 -   added icons for the tech stacks used in portfolio projects.
 -   changed font from Arial and added some new fonts from Google Fonts
-
-## Still To Add
-
--   Minor animations
+-   Added coloured favicon and changed name in tab
 
 ### Dark Mode:
 
 ![My portfolio (dark mode)](./images/portfolio-dark.PNG)
+
+### Still To Add
+
+-   Minor animations
