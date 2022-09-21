@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 :root {
-  --primary-colour: #c9cebd;
-  --secondary-colour: #b2bcaa;
+  --primary-colour: #a4b39b;
+  --secondary-colour: #92a188;
   --title-colour: #4c654c;
   --subtitle-colour: #846c5b;
   --neutral-colour: #6c6061;
   --navbar-hover-colour-text: #c9cebd;
   --neutral-colour-dark: #473d3e;
   --navbar-active-colour: #3d553d;
-  --text: #000;
+  --text: #001602;
 }
 
 [data-theme=dark] {
@@ -19,7 +19,7 @@
   --neutral-colour: #ebc2c5;
   --navbar-hover-colour-text: #2c4119;
   --neutral-colour-dark: #92686d;
-  --navbar-active-colour: #031b03;
+  --navbar-active-colour: #b9d80a;
   --text: #ebc2c5;
 }
 
@@ -218,7 +218,17 @@ body {
 }
 @media only screen and (min-width: 400px) and (max-width: 768px) {
   .main__titlescreen--box--para {
-    font-size: 16px;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .main__titlescreen--box--para {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .main__titlescreen--box--para {
+    font-size: 10px;
   }
 }
 .main__portfolio {
@@ -270,8 +280,8 @@ body {
 }
 @media only screen and (max-width: 300px) {
   .main__portfolio--img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 }
 .main__portfolio--img:hover {
@@ -283,9 +293,14 @@ body {
   height: 30vh;
   margin-top: 40px;
 }
-@media only screen and (min-width: 400px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
   .main__portfolio--para {
     font-size: 15px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+  .main__portfolio--para {
+    font-size: 13px;
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 400px) {
@@ -297,7 +312,8 @@ body {
 }
 @media only screen and (max-width: 300px) {
   .main__portfolio--para {
-    height: 17vh;
+    font-size: 10px;
+    height: 18vh;
     width: 90%;
     margin-top: 4px;
   }
@@ -329,17 +345,32 @@ body {
   align-items: flex-end;
   font-size: 40px;
 }
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+  .main__experience {
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .main__experience {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .main__experience {
+    font-size: 10px;
+  }
+}
 .main__experience--para {
   width: 90%;
 }
 @media only screen and (max-width: 300px) {
   .main__experience--para {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 400px) {
   .main__experience--para {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 .main__contact {

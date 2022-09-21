@@ -1,19 +1,18 @@
-@use "./partials/palette";
 @use "./partials/devices";
 @use "./partials/mixins";
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 :root {
-    --primary-colour: #c9cebd;
-    --secondary-colour: #b2bcaa;
+    --primary-colour: #a4b39b;
+    --secondary-colour: #92a188;
     --title-colour: #4c654c;
     --subtitle-colour: #846c5b;
     --neutral-colour: #6c6061;
     --navbar-hover-colour-text: #c9cebd;
     --neutral-colour-dark: #473d3e;
     --navbar-active-colour: #3d553d;
-    --text: #000;
+    --text: #001602;
 }
 
 [data-theme="dark"] {
@@ -24,7 +23,7 @@
     --neutral-colour: #ebc2c5;
     --navbar-hover-colour-text: #2c4119;
     --neutral-colour-dark: #92686d;
-    --navbar-active-colour: #031b03;
+    --navbar-active-colour: #b9d80a;
     --text: #ebc2c5;
 }
 
@@ -181,7 +180,13 @@ body {
                     font-size: 20px;
                 }
                 @include devices.tablet {
-                    font-size: 16px;
+                    font-size: 15px;
+                }
+                @include devices.phone {
+                    font-size: 12px;
+                }
+                @include devices.phone-s {
+                    font-size: 10px;
                 }
             }
         }
@@ -218,8 +223,8 @@ body {
                 height: 50px;
             }
             @include devices.phone-s {
-                width: 40px;
-                height: 40px;
+                width: 30px;
+                height: 30px;
             }
             &:hover {
                 border: 3px solid var(--neutral-colour-dark);
@@ -230,8 +235,11 @@ body {
             width: 45%;
             height: 30vh;
             margin-top: 40px;
-            @include devices.tablet {
+            @include devices.tablet-ls {
                 font-size: 15px;
+            }
+            @include devices.tablet {
+                font-size: 13px;
             }
             @include devices.phone {
                 height: 19vh;
@@ -239,7 +247,8 @@ body {
                 margin-top: 4px;
             }
             @include devices.phone-s {
-                height: 17vh;
+                font-size: 10px;
+                height: 18vh;
                 width: 90%;
                 margin-top: 4px;
             }
@@ -261,6 +270,15 @@ body {
         background-color: var(--secondary-colour);
         @include mixins.maindiv;
         @include mixins.toppage;
+        @include devices.tablet {
+            font-size: 13px;
+        }
+        @include devices.phone {
+            font-size: 11px;
+        }
+        @include devices.phone-s {
+            font-size: 10px;
+        }
         &--para {
             width: 90%;
             @include mixins.fontsize;

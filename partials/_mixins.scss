@@ -20,9 +20,9 @@
 
 @mixin fontsize {
     @include devices.phone-s {
-        font-size: 12px;
+        font-size: 11px;
     }
     @include devices.phone {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
