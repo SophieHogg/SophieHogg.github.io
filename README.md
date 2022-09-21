@@ -41,4 +41,4 @@ I have tested the website using placeholder devices provided by Google Chrome an
 
 ### Still To Add
 
--   Minor animations
+-   Minor animations (underline animation in nav bar would be a good place to start!)
