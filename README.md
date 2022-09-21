@@ -6,13 +6,15 @@
 
 This project was completed using HTML, CSS and JavaScript as part of my time at \_nology.
 
-## Colour Palette
+## Design and Structure
 
 I enjoy taking my colour palettes from Australian flora. This is a unifying factor throughout all of my personal projects. In this case, I used the palette based the foliage and bark of Australian gum trees, with a lot of faded greens and pale grey-brown colours.
 
-## Structure
-
 My portfolio is a single page, navigable with arrows or by scrolling, or by using the navigation bar at the top of the page. Each section of the page is divided into one screen for the user, with alternating colours used for alternating sections to provide a clear line between topics and pages.
+
+There is also (as of 14/09) a dark mode option, which will change the palette to deep rainforesty colours. The button name will also change upon clicking.
+
+### Responsiveness
 
 The page works on all screen sizes, even very narrow phone screens (all the way down to about 290 px wide.)
 I have tested the website using placeholder devices provided by Google Chrome and Firefox and all display the website without any glitches. Text and images will resize and at very narrow widths, the image on the home screen will disappear to allow for this flexibility.
@@ -31,7 +33,7 @@ I have tested the website using placeholder devices provided by Google Chrome an
 -   added links for Github and LinkedIn using colour-changing icons.
 -   added icons for the tech stacks used in portfolio projects.
 -   changed font from Arial and added some new fonts from Google Fonts
--   Added coloured favicon and changed name in tab
+-   added coloured favicon and changed name in tab
 
 ### Dark Mode:
 
