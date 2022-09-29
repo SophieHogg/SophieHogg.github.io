@@ -9,6 +9,7 @@
   --neutral-colour-dark: #473d3e;
   --navbar-active-colour: #3d553d;
   --text: #001602;
+  --underline-animation: #dfff10;
 }
 
 [data-theme=dark] {
@@ -21,6 +22,7 @@
   --neutral-colour-dark: #92686d;
   --navbar-active-colour: #b9d80a;
   --text: #ebc2c5;
+  --underline-animation: #fbfac9;
 }
 
 * {
@@ -33,11 +35,11 @@
   text-decoration: none;
   background-color: var(--secondary-colour);
 }
-.navlink:hover {
-  background-color: var(--title-colour);
-}
 .navlink:active {
   background-color: var(--navbar-active-colour);
+}
+.navlink:hover {
+  background-color: var(--title-colour);
 }
 
 body {
@@ -71,9 +73,8 @@ body {
   flex-wrap: wrap;
 }
 .header__card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  position: relative;
   width: 10%;
   min-width: 200px;
   height: 3vh;
@@ -88,10 +89,26 @@ body {
     min-width: 150px;
   }
 }
+.header__card:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--underline-animation);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
 .header__card:hover {
   color: var(--navbar-hover-colour-text);
   text-decoration: underline;
   text-underline-offset: 0.4em;
+}
+.header__card:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 .header__card:active {
   color: var(--navbar-hover-colour-text);

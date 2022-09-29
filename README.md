@@ -35,10 +35,12 @@ I have tested the website using placeholder devices provided by Google Chrome an
 -   changed font from Arial and added some new fonts from Google Fonts
 -   added coloured favicon and changed name in tab
 
+## Updates 29/09
+
+-   Added minor animations to navbar links
+
 ### Dark Mode:
 
 ![My portfolio (dark mode)](./images/portfolio-dark.PNG)
 
 ### Still To Add
-
--   Minor animations (underline animation in nav bar would be a good place to start!)
