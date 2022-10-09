@@ -44,3 +44,4 @@ I have tested the website using placeholder devices provided by Google Chrome an
 ![My portfolio (dark mode)](./images/portfolio-dark.PNG)
 
 ### Still To Add
+- Additional animations once I have more experience with JQuery.
