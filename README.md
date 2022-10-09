@@ -39,7 +39,7 @@ I have tested the website using placeholder devices provided by Google Chrome an
 
 -   Added minor animations to navbar links
 
-### Dark Mode:
+### Dark Mode: 
 
 ![My portfolio (dark mode)](./images/portfolio-dark.PNG)
 
